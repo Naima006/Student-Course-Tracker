@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-white">Course Tracker</h1>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden sm:flex sm:flex-1 sm:justify-center">
+                    <div class="flex space-x-4">
+                        <a href="index.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="form.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Form</a>
+                        <a href="table.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                            aria-current="page">Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Table Section -->
+    <main class="max-w-6xl mx-auto mt-10 bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-center mb-6">Tracked Course Log</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200" id="courseTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Student Name</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Course Name</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Course Code</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Credit Hours</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Semester</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200" id="tableBody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
