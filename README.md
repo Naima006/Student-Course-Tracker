@@ -14,7 +14,7 @@ A simple web application to track students' courses using HTML, JavaScript, and 
 
 - HTML
 - Tailwind CSS
-- JavaScript (DOM manipulation and localStorage)
+- JavaScript
 
 ## How to Use
 
